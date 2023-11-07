@@ -1,0 +1,150 @@
+$color1: #4E89AE;
+$color2: #43658B;
+$color3: #ED6663;
+$color4: #FFA372;
+
+
+@mixin resolutions($minwidth, $maxwidth) {
+    @media screen and (min-width: $minwidth) and (max-width:$maxwidth){
+        @content
+    }
+}
+
+body {
+    background-color: #8CCFF7;
+    border: 0;
+}
+
+@media screen and (min-width: 801px) {
+    .pic {
+        background-image: url("400.png");
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    .pic {
+        background-image: url("300.png");
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pic {
+        background-image: url("200.png");
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.text {
+    color: #969696;
+    text-align: center;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: right;
+    margin: auto;
+}
+
+.start {
+    background-color: #E2EFF1;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 55px;
+}
+
+.main {
+    padding-top: 50px;
+    padding-bottom: 55px;
+    height: 100%;
+}
+
+.rec1 {
+    background-color: $color1;
+    height: 40px;
+    display: flex
+}
+
+.rec2 {
+    @extend .rec1;
+    background-color: $color2;
+}
+
+.rec3 {
+    @extend .rec1;
+    background-color: $color3;
+}
+
+.rec4 {
+    @extend .rec1;
+    background-color: $color4;
+}
+
+.rec1:hover, .rec2:hover, .rec3:hover, .rec4:hover {
+    background-color: #434343;
+}
+
+.circ1 {
+    background-color: $color4;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin: 5px;
+}
+
+.circ2 {
+    @extend .circ1;
+    background-color: $color3;
+    height: 90px;
+    width: 90px;
+    border-radius: 90px
+}
+
+.circ3 {
+    @extend .circ1;
+    background-color: $color2;
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
+
+.circ4 {
+    @extend .circ1;
+    background-color: $color1;
+    height: 70px;
+    width: 70px;
+    border-radius: 70px;
+}
+
+.circ1:hover, .circ2:hover, .circ3:hover, .circ4:hover {
+    background-color: #434343;
+}
+
+.circles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    @include resolutions(620px, 1040px) {
+    flex-direction: column;
+    margin: auto;
+    }  
+    
+    @include resolutions(480px, 940px) {
+    flex-direction: column;
+    margin: auto;
+    }
+
+    @include resolutions(0px, 480px) {
+    flex-direction: column;
+    margin: auto;
+    }
+}

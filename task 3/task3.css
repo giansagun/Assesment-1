@@ -1,0 +1,132 @@
+body {
+  background-color: #8CCFF7;
+  border: 0;
+}
+
+@media screen and (min-width: 801px) {
+  .pic {
+    background-image: url("400.png");
+    height: 400px;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .pic {
+    background-image: url("300.png");
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pic {
+    background-image: url("200.png");
+    width: 200px;
+    height: 200px;
+  }
+}
+.text {
+  color: #969696;
+  text-align: center;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: right;
+  margin: auto;
+}
+
+.start {
+  background-color: #E2EFF1;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 55px;
+}
+
+.main {
+  padding-top: 50px;
+  padding-bottom: 55px;
+  height: 100%;
+}
+
+.rec1, .rec4, .rec3, .rec2 {
+  background-color: #4E89AE;
+  height: 40px;
+  display: flex;
+}
+
+.rec2 {
+  background-color: #43658B;
+}
+
+.rec3 {
+  background-color: #ED6663;
+}
+
+.rec4 {
+  background-color: #FFA372;
+}
+
+.rec1:hover, .rec2:hover, .rec3:hover, .rec4:hover {
+  background-color: #434343;
+}
+
+.circ1, .circ4, .circ3, .circ2 {
+  background-color: #FFA372;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  margin: 5px;
+}
+
+.circ2 {
+  background-color: #ED6663;
+  height: 90px;
+  width: 90px;
+  border-radius: 90px;
+}
+
+.circ3 {
+  background-color: #43658B;
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+}
+
+.circ4 {
+  background-color: #4E89AE;
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+}
+
+.circ1:hover, .circ2:hover, .circ3:hover, .circ4:hover {
+  background-color: #434343;
+}
+
+.circles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 620px) and (max-width: 1040px) {
+  .circles {
+    flex-direction: column;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 940px) {
+  .circles {
+    flex-direction: column;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .circles {
+    flex-direction: column;
+    margin: auto;
+  }
+}/*# sourceMappingURL=task3.css.map */

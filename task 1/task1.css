@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+section img {
+    width: calc(100% / 3);
+    float: left;
+    background-color: white;
+}
+
+.logo {
+    background-color: white;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    margin-left: 18px;
+    height: 90px;
+}
+
+header, .lorem {
+    background-color: white;
+}
+
+.lorem {
+    color: black;
+    float: center;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+    body {
+        width: 1024px;
+    }
+}
+
+@media (max-width: 1023.9px) and (min-width: 800px) {
+    section img {
+        width: calc(100% / 2);
+        float: left;
+    }
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text {
+        color: black;
+        float: center;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 799.9px) and (min-width: 480px) {
+    section img {
+        width: calc(100% / 1);
+        float: left;
+    }
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text {
+        color: black;
+        float: center;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 479.9px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section img {
+        width: calc(100% / 1);
+        float: left;
+    }
+}
